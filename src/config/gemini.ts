@@ -7,7 +7,7 @@ if (!API_KEY) {
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
 
 export const generateGeminiContent = async (prompt: string) => {
-  if (!API_KEY) throw new Error('API key is not configured');
+  //if (!API_KEY) throw new Error('API key is not configured');
 
   try {
     const response = await fetch(`${GEMINI_API_URL}?key=AIzaSyAgbNwmiUEd4GS8EgBGS-t_S7oJ68mNdEE`, {
